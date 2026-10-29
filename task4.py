@@ -23,7 +23,6 @@ def get_upcoming_birthdays(users):
                     year=today.year + 1
                 )
             except ValueError:
-                # Обработка 29 февраля в невисокосном году
                 birthday_this_year = datetime(
                     today.year + 1, 2, 28
                 ).date()
